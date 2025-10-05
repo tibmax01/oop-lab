@@ -87,7 +87,7 @@ Calendarul activităților se regăsește [aici](#calendar-laborator).
 
         // calculeaza coeficientul de penalizare
         nof_absente = 10 - nof_prezente;
-        coef_penalizare = (nof_absente < 4) ? 1.5 : 2.0;
+        coef_penalizare = (nof_absente < 4) ? 1 : 2;
 
         // calculeaza nota finala
         nota_P = nota_P - nof_absente * coef_penalizare;
@@ -98,7 +98,7 @@ Calendarul activităților se regăsește [aici](#calendar-laborator).
 ## Despre Proiect
 Componenta practică a acestui laborator constă în realizarea unui proiect care îndeplinește o serie de cerințe.
 
-Temele de proiect se pot alege în mod independent. Nu sunt restricții, însă trebuie să vă asigurați că aceste criterii pot fi îndeplinite prin tema pe care decideți să o alegeți.
+Temele de proiect se pot alege în mod independent. Nu sunt restricții, însă trebuie să vă asigurați că aceste criterii pot fi îndeplinite prin tema pe care decideți să o alegeți. Aveți dreptul să vă schimbați tema proiectului **o singură dată**, după M1 (cu o singură condiție: rezolvarea cerințelor din M1 și pentru noua temă a proiectului). Până la M1 aveți libertatea să vă schimbați tema oricând.
 
 Există această pagină în care puteți observa câteva idei de teme care au fost alese în trecut: [HoF.md](https://github.com/mcmarius/poo/blob/master/HoF.md). **Există și proiecte interzise!**
 
