@@ -20,6 +20,8 @@ public:
         this->greutateFruct = fruct.greutateFruct;
     }
 
+public:
+
     // h = g;
     Fruct& operator=(const Fruct& fruct) {
         std::cout << "Fruct assignment operator" << std::endl;
@@ -35,6 +37,12 @@ public:
         return os;
     }
 
+    friend std::istream& operator>>(std::istream& is, Fruct& fruct) {
+        is >> fruct.numeFruct;
+        is >> fruct.greutateFruct;
+        return is;
+    }
+
     ~Fruct() = default;
 
     void setNumeFruct(const std::string& numeFruct) {
@@ -45,12 +53,13 @@ public:
         this->greutateFruct = greutateFruct;
     }
 
-    std::string getNumeFruct() {
-        return this->numeFruct;
+    [[nodiscard]] const std::string & get_nume_fruct() const {
+        return numeFruct;
     }
 
-    float getGreutateFruct() {
-        return this->greutateFruct;
+    [[nodiscard]] float get_greutate_fruct() const {
+        // greutateFruct = 100; EROARE - functia este read-only
+        return greutateFruct;
     }
 
     void print() {
@@ -59,6 +68,7 @@ public:
 };
 
 int main() {
+
     Fruct f("para", 250);
     f.print();
     Fruct g;
@@ -75,5 +85,17 @@ int main() {
     j.operator=(h.operator=(g));
 
     h.print();
+
+    Fruct i;
+    float greutate;
+    std::string nume;
+    std::cin >> nume >> greutate;
+    i.setGreutateFruct(greutate);
+    i.setNumeFruct(nume);
+    std::cout << i << std::endl;
+
+    Fruct k;
+    std::cin >> k;
+    std::cout << k << "\n";
     return 0;
 }
