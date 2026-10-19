@@ -1,5 +1,5 @@
 
-# Laborator POO 2025-2026, semestrul I
+# Laborator POO 2026-2027, semestrul I
 Laborator de Programare Orientată pe Obiecte, Facultatea de Matematică și Informatică @ Universitatea din București
 
 ### Acknowledgements
@@ -23,8 +23,7 @@ Fiecare dintre cele două componente ale laboratorului valorează câte **50%** 
 
 - 50% examen de curs;
 - **25% proiect (P)** - *aici vom lucra noi*;
-- **25% colocviu de laborator (C)** - *aici vom lucra noi*;
-- **0.5 puncte bonus din seminar (S)** - *aici vom lucra noi*.
+- **25% colocviu de laborator (C)** - *aici vom lucra noi*.
 
 Notele maxime pe care le puteți obține în cadrul acestui laborator:
 
@@ -54,8 +53,7 @@ Există prag pentru fiecare componentă a evaluarii:
 ```
 
 ## Despre Prezențe
-- În cadrul laboratorului ***SUNT* obligatorii minim 10 prezențe**.
-- În cazul seminarului, prezențele nu sunt obligatorii, dar *sunt recomandate*.
+- În cadrul laboratorului ***SUNT* obligatorii minim 14 prezențe (ore de laborator + ore de proiect)**.
 
 Voi face prezența, voi nota și activitatea: *pot (nu garantez) ține cont de aceste aspecte și la evaluare*.
 
@@ -83,11 +81,11 @@ Calendarul activităților se regăsește [aici](#calendar-laborator).
 
     ```cpp
         nof_prezente = get_nof_prezente();
-        if (nof_prezente >= 10) return;
+        if (nof_prezente >= 14) return;
 
         // calculeaza coeficientul de penalizare
-        nof_absente = 10 - nof_prezente;
-        coef_penalizare = (nof_absente < 4) ? 1 : 2;
+        nof_absente = 14 - nof_prezente;
+        coef_penalizare = (nof_absente < 7) ? 0.5 : 1;
 
         // calculeaza nota finala
         nota_P = nota_P - nof_absente * coef_penalizare;
@@ -143,42 +141,51 @@ Mai multe detalii, vor fi anunțate în proximitatea acestuia. Până atunci, c�
 ## Calendar Activități
 | Activitate         | Săptămâna         | Calendar          | Action Item     |
 | :----------------: | :---------------: | :---------------: | :-------------: |
-| Laborator 1        | Săptămâna 1       | 24-25 februarie   | N/A             |
-| Seminar 1          | Saptămâna 1       | 25 februarie      | N/A             |
+| Laborator 1        | Săptămâna 1       | 6-7 octombrie     | de recuperat    |
+| Proiect 1 (1/2)    | Saptămâna 1       | 7 octombrie       | de recuperat    |
 |                                                                              |
-| Laborator 2        | Săptămâna 2       | 3-4 martie        | N/A             |
+| Laborator 2        | Săptămâna 2       | 13-14 octombrie   | de recuperat    |
+| Proiect 1 (2/2)    | Saptămâna 2       | 14 octombrie      | de recuperat    |
 |                                                                              |
-| Laborator 3        | Săptămâna 3       | 10-11 martie      | N/A             |
-| Seminar 2          | Saptămâna 3       | 11 martie         | N/A             |
+| Laborator 3        | Săptămâna 3       | 20-21 octombrie   | N/A             |
+| Proiect 2 (1/2)    | Saptămâna 3       | 21 octombrie      | N/A             |
 |                                                                              |
-| Laborator 4        | Săptămâna 4       | 17-18 martie      | N/A             |
+| Laborator 4        | Săptămâna 4       | 27-28 octombrie   | N/A             |
+| Proiect 2 (2/2)    | Saptămâna 4       | 28 octombrie      | N/A             |
 |                                                                              |
-| Laborator 5        | Săptămâna 5       | 24-25 martie      | Prezentări M1   |
-| Seminar 3          | Saptămâna 5       | 25 martie         | N/A             |
+| Laborator 5        | Săptămâna 5       | 3-4 noiembrie     | N/A             |
+| Proiect 3 (1/2)    | Saptămâna 5       | 4 noiembrie       | N/A             |
 |                                                                              |
-| Laborator 6        | Săptămâna 6       | 31 mar. - 1 apr.  | N/A             |
+| Laborator 6        | Săptămâna 6       | 10-11 noiembrie   | N/A             |
+| Proiect 3 (2/2)    | Saptămâna 6       | 11 noiembrie      | N/A             |
 |                                                                              |
-| Laborator 7        | Săptămâna 7       | 7-8 aprilie       | N/A             |
-| Seminar 4          | Saptămâna 7       | 8 aprilie         | N/A             |
+| Laborator 7        | Săptămâna 7       | 17-18 noiembrie   | de recuperat    |
+| Proiect 4 (1/2)    | Saptămâna 7       | 18 noiembrie      | de recuperat    |
 |                                                                              |
-| Vacanță            | Vacanță           | 11-19 aprilie     | Vacanță         |
+| Laborator 8        | Săptămâna 8       | 24-25 noiembrie   | Prezentări M1   |
+| Proiect 4 (2/2)    | Saptămâna 8       | 25 noiembrie      | N/A             |
 |                                                                              |
-| Laborator 8        | Săptămâna 8       | 21-22 aprilie     | N/A             |
+| Laborator 9        | Săptămâna 9       | 1-2 decembrie     | N/A             |
+| Proiect 5 (1/2)    | Saptămâna 9       | 2 decembrie       | N/A             |
 |                                                                              |
-| Laborator 9        | Săptămâna 9       | 28-29 aprilie     | N/A             |
-| Seminar 5          | Saptămâna 9       | 29 aprilie        | N/A             |
+| Laborator 10       | Săptămâna 10      | 8-9 decembrie     | N/A             |
+| Proiect 5 (2/2)    | Saptămâna 10      | 9 decembrie       | N/A             |
 |                                                                              |
-| Laborator 10       | Săptămâna 10      | 5-6 mai           | Prezentări M2   |
+| Laborator 11       | Săptămâna 11      | 15-16 decembrie   | N/A             |
+| Proiect 6 (1/2)    | Saptămâna 11      | 16 decembrie      | N/A             |
 |                                                                              |
-| Laborator 11       | Săptămâna 11      | 12-13 mai         | N/A             |
-| Seminar 6          | Saptămâna 11      | 13 mai            | N/A             |
+| Laborator 12       | Săptămâna 12      | 22-23 decembrie   | N/A             |
+| Proiect 6 (2/2)    | Saptămâna 12      | 23 decembrie      | N/A             |
 |                                                                              |
-| Laborator 12       | Săptămâna 12      | 19-20 mai         | N/A             |
+| Vacanță            | Vacanță           | 24 dec - 10 ian   | Vacanță         |
 |                                                                              |
-| Laborator 13       | Săptămâna 13      | 26-27 mai         | N/A             |
-| Seminar 7          | Saptămâna 13      | 27 mai            | N/A             |
+| Laborator 13       | Săptămâna 13      | 12-13 ianuarie    | Prezentări M2   |
+| Proiect 7 (1/2)    | Saptămâna 13      | 13 ianuarie       | N/A             |
 |                                                                              |
-| Laborator 14       | Săptămâna 14      | 2-3 iunie         | Prezentări M3   |
+| Laborator 14       | Săptămâna 14      | 19-20 ianuarie    | N/A             |
+| Proiect 7 (2/2)    | Saptămâna 14      | 20 ianuarie       | N/A             | 
+|                                                                              |
+| Prezentări M3      | Prezentări M3     | în sesiune        | Prezentări M3   |
 
 ## Materiale Laborator
 Materialele și codurile utilizate în cadrul laboratoarelor pot fi găsite [aici](https://github.com/tibmax01/oop-lab/tree/main/materiale/).
